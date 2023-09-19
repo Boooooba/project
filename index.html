@@ -1,13 +1,99 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="app.js" defer></script>
+    <script src="js/bootstrap.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/26679ddbf5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: #000;">
+  <nav class="navbar navbar-dark fixed-top" style="background-color: #000;" id="navBar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="img" src="resource/creative-gradient-code-logo_23-2148820572.avif" alt="">
+      </a>
+      <button class="navbar-toggler" style=" margin-bottom: 4.4rem; margin-right: 4.4rem; position: sticky;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Section 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Section 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Section 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">gallery</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" style="color: white;" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+ 
+
+  <div class="container-fluid hidden welcoming-img" data-aos="fade-right">
+    <img class="svg" src="resource/images.jpg" alt="">
+  </div>
+
+  <div class="container welcoming-text" id="welcomingText">
+    <h1 class="title hidden">კეთილი იყოს თქვენი მობრძანება Fuex- ში!</h1>
+    <p class="info hidden">Fuex– ში ჩვენ თავიდან დავწერეთ ბიზნესის ხალხთან ვიზუალური კომუნიკაციის წესები.
+      ჩვენი პროდუქტი შექმნილია იმისთვის, რომ დაგეხმაროთ გამოირჩეოდეთ და წინ უსწრებდეთ ყველას.
+      ჩვენთან თანამშრომლობა მოგების გარანტიაა და როდესაც გამარჯვებული ხარ, მომავალი შენია!
+      
+      იყავი სხვებისგან განსხვავებული, იყავი უკეთესი Fuexთან ერთად!
+    </p>
+  </div> 
+
+
+      <div id="carouselExampleIndicators" class="carousel slide Car" data-bs-ride="carousel" style="margin-top: 32px;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" id="gallery">
+          <div class="carousel-item active">
+            <img src="resource/stock-photo-142984111-1500x1000.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="resource/stock-photo-142984111-1500x1000.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="resource/stock-photo-142984111-1500x1000.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</body>
 </html>
