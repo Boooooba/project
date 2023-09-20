@@ -1,99 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <script src="app.js" defer></script>
     <script src="js/bootstrap.js" defer></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script src="js/bootstrap.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/26679ddbf5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/26679ddbf5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-</head>
-<body style="background-color: #000;">
-  <nav class="navbar navbar-dark fixed-top" style="background-color: #000;" id="navBar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img class="img" src="resource/creative-gradient-code-logo_23-2148820572.avif" alt="">
-      </a>
-      <button class="navbar-toggler" style=" margin-bottom: 4.4rem; margin-right: 4.4rem; position: sticky;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section1">Section 1</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section2">Section 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section3">Section 3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">gallery</a>
-            </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary" style="color: white;" type="submit">Search</button>
-          </form>
+  </head>
+  <body style="background-color: #000">
+    <nav
+      class="navbar navbar-dark fixed-top"
+      style="background-color: #000"
+      id="navBar"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            class="img"
+            src="resource/creative-gradient-code-logo_23-2148820572.avif"
+            alt=""
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          style="margin-bottom: 4.4rem; margin-right: 4.4rem; position: sticky"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+              Dark offcanvas
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">gallery</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-primary"
+                style="color: white"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
         </div>
       </div>
+    </nav>
+
+    <div class="container-fluid hidden welcoming-img" data-aos="fade-right">
+      <img class="svg" src="resource/images.jpg" alt="" />
     </div>
-  </nav>
- 
 
-  <div class="container-fluid hidden welcoming-img" data-aos="fade-right">
-    <img class="svg" src="resource/images.jpg" alt="">
-  </div>
+    <div class="container welcoming-text" id="welcomingText">
+      <h1 class="title hidden">კეთილი იყოს თქვენი მობრძანება Fuex- ში!</h1>
+      <p class="info hidden">
+        Fuex– ში ჩვენ თავიდან დავწერეთ ბიზნესის ხალხთან ვიზუალური კომუნიკაციის
+        წესები. ჩვენი პროდუქტი შექმნილია იმისთვის, რომ დაგეხმაროთ გამოირჩეოდეთ
+        და წინ უსწრებდეთ ყველას. ჩვენთან თანამშრომლობა მოგების გარანტიაა და
+        როდესაც გამარჯვებული ხარ, მომავალი შენია! იყავი სხვებისგან
+        განსხვავებული, იყავი უკეთესი Fuexთან ერთად!
+      </p>
+    </div>
 
-  <div class="container welcoming-text" id="welcomingText">
-    <h1 class="title hidden">კეთილი იყოს თქვენი მობრძანება Fuex- ში!</h1>
-    <p class="info hidden">Fuex– ში ჩვენ თავიდან დავწერეთ ბიზნესის ხალხთან ვიზუალური კომუნიკაციის წესები.
-      ჩვენი პროდუქტი შექმნილია იმისთვის, რომ დაგეხმაროთ გამოირჩეოდეთ და წინ უსწრებდეთ ყველას.
-      ჩვენთან თანამშრომლობა მოგების გარანტიაა და როდესაც გამარჯვებული ხარ, მომავალი შენია!
-      
-      იყავი სხვებისგან განსხვავებული, იყავი უკეთესი Fuexთან ერთად!
-    </p>
-  </div> 
-
-
-      <div id="carouselExampleIndicators" class="carousel slide Car" data-bs-ride="carousel" style="margin-top: 32px;">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <section class="cube-section text-figure" id="section1">
+      <div class="text-figure-container">
+        <div class="text-container">
+          <p>
+            <span class="span-text">მეტი კლიენტი:</span> თქვენი კლიენტების ბაზა
+            გაფართოვდებოდა, რადგან ყოველ დღიურად გამვლელები თქვენი მაღაზიის
+            ვიტრინაზე იხილავდნენ თქვენსავე არჩეულ რეკლამებს, ვიდეოებს, ფოტოებს,
+            თუ ანიმაციებს. რაც მათ დაინტერესებას გამოიწვევდა მაშინაც კი, თუ მათ
+            არასოდეს სმენიათ თქვენი ბიზნესის შესახებ. <br />
+            <br />
+            <span class="span-text"> ერთ-ერთი პირველი:</span> თქვენ იქნებით იმ
+            ბრენდებს შორის, რომლებმაც მიიღეს ეს ტექნოლოგია დროულად, შექმნეს
+            ხმაური, რომელიც ხალხს აღელვებს და მათ ემოციებს შეეხება.
+          </p>
         </div>
-        <div class="carousel-inner" id="gallery">
-          <div class="carousel-item active">
-            <img src="resource/stock-photo-142984111-1500x1000.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="resource/stock-photo-142984111-1500x1000.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="resource/stock-photo-142984111-1500x1000.jpg" class="d-block w-100" alt="...">
+
+        <div class="figure">
+          <div class="cube">
+            <div class="top"></div>
+            <div>
+              <span style="--i: 0"></span>
+              <span style="--i: 1"></span>
+              <span style="--i: 2"></span>
+              <span style="--i: 3"></span>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-</body>
+    </section>
+    <!-- pyramid -->
+    <section class="pyramid-section text-figure" id="section2">
+      <div class="text-figure-container">
+        <div class="figure">
+          <div class="pyramid">
+            <div class="glow"></div>
+            <div>
+              <span style="--i: 0"></span>
+              <span style="--i: 1"></span>
+              <span style="--i: 2"></span>
+              <span style="--i: 3"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <p>
+            <span class="span-text">10 ნაბიჯით წინ:</span> თქვენი ბიზნესი
+            საგრძნობლად დაჩრდილავს თქვენს კონკურენტებს, რაც მათზე რამოდენიმე
+            ნაბიჯით წინ წაქწევთ. კლიენტები შეეჩვევიან თქვენგან ყიდვას, რაც
+            სამომავლოდ მათთვისვე ძნელს გახდის ჩვევის დავიწყებას. და ბოლოს,
+            ფინანსური ზრდა რომელსაც ჩვენი პროდუქტთან ერთან გარანტირებულია, რაც
+            მოგცემთ საშუალებას თქვენს ბიზნესში მეტი ინვესტიციის ჩასადებად.
+            <br />
+            <br />
+            <span class="span-text">სადღესასწაულო მაგია:</span> წარმოიდგინეთ
+            თქვენი მაღაზიის ვიტრინების გარდაქმნა დღესასწაულისა თუ ნებისმიერი
+            ივენთისათის შესაბამისად. იმის ნაცვლად, რომ იგივე ძველი საახალწლო
+            დეკორაციები გამოიყენოთ, რომლებსაც უკვე ათწლეულებია იყენებს ყველა და
+            აღარავის აღარ აკვირვებს, თქვენ შეგეძლებად პირდაპირი ამ სიტყვების
+            მნიშვნელობით სანტამ იფრინოს მარხილით თქვენს ვიტრინებზე, შექმნათ
+            მომხიბვლელი ატმოსფერო, რომელიც იტაცებს ყველას, ვინც ამას ხედავს.
+            <br />
+            <br />
+            <span class="span-text">ყველასთვის:</span> ეს პროდუქტი არის
+            ყველასათვის. არ აქვს განსხვავება, გსურთ თქვენი საოფისე ფართის
+            დახვეწა, კონფიდენციალურობის შექმნა მინების დროდადრო დაბურვით, თუ
+            ხართ მშობელი, რომელიც ეძებს კარგ ღამის განათებას თქვენი
+            შვილებისთვის, ჩვენი პროდუქტი საუკეთესო არჩევანია. უბრალოდ გამოიყენეთ
+            ჩვენი პროდუქტი მინაზე და ყველაფერი ისე მუშაობს როგორც საათი.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section text-figure" id="section3">
+      <div class="feature-container">
+        <div class="row">
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="lock-closed-outline"></ion-icon>
+              <h3>Privacy protection</h3>
+            </div>
+            <p>
+              Compared with ordinary glass, the anti-noise ability of glass
+              using Filmbase smart film is increased by 20%.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="laptop-outline"></ion-icon>
+              <h3>Touch screen and projection</h3>
+            </div>
+            <p>
+              Excellent image effects will be achleved Watch movies through a
+              high-definition projector that enables multi-touch to the film.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="checkmark-done-outline"></ion-icon>
+              <h3>Security</h3>
+            </div>
+            <p>
+              Even if the glass is broken, the fragments can still be adsorbed
+              on the smart film, which can avoid personal injury caused by
+              broken glass.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="leaf-outline"></ion-icon>
+              <h3>Enviromental protection</h3>
+            </div>
+            <p>
+              The installation of smart film can effectively reduce the loss of
+              decoration, which can better reduce pollution and protect the
+              environment.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="tv-outline"></ion-icon>
+              <h3>Space partition</h3>
+            </div>
+            <p>
+              To protect your privacy and security, you can control it to be
+              transparent or opaque at any time. Make your space more malleable,
+              choose open or private at will.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="stats-chart-outline"></ion-icon>
+              <h3>Cooling and UV protection</h3>
+            </div>
+            <p>
+              By blocking more than 98% of infrared rays, the heat insulation
+              effect is achieved. At the same time, it blocks more than 99% of
+              ultraviolet rays, protects indoor furniture from fading and aging,
+              and avoids ultraviolet rays from causing damage to the body.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="radio-outline"></ion-icon>
+              <h3>Anti-noise</h3>
+            </div>
+            <p>
+              Compared with ordinary glass, the anti-noise ability of glass
+              using Filmbase smart film is increased by 20%.
+            </p>
+          </div>
+
+          <div class="service">
+            <div class="icon-title">
+              <ion-icon class="icon" name="apps-outline"></ion-icon>
+              <h3>Valious control methods</h3>
+            </div>
+            <p>
+              In order to meet your various needs, you can choose your preferred
+              control method: remote control, wired control, infrared induction,
+              voice control, mobile application, etc. In addition, an FM
+              transformer can be selected to gradually change the film.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide Car"
+      data-bs-ride="carousel"
+      style="margin-top: 32px"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" id="gallery">
+        <div class="carousel-item active">
+          <img
+            src="resource/stock-photo-142984111-1500x1000.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="resource/stock-photo-142984111-1500x1000.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="resource/stock-photo-142984111-1500x1000.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </body>
 </html>
