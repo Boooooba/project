@@ -476,4 +476,7 @@
   .pyramid-section {
     padding: 50px 30px;
   }
+  .body{
+    display: none;
+  }
 }
